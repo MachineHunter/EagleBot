@@ -4,7 +4,7 @@ import sys
 
 
 def getMeaning(word):
-	url = "https://ejje.weblio.jp/content"+str(word)
+	url = "https://ejje.weblio.jp/content/"+str(word)
 	r = req.get(url)
 
 	soup = BeautifulSoup(r.text, "html.parser")
