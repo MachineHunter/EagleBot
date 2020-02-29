@@ -2,6 +2,8 @@ from flask import Flask, request, abort
 import os
 import sys
 import json
+import dictionary
+
 
 from linebot import (
 	LineBotApi, WebhookHandler
@@ -67,9 +69,13 @@ def callback():
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+	
+	word = event.message.text
+	result = dictionary.getMeaning(word)
+
 	line_bot_api.reply_message(
 		event.reply_token,
-		TextSendMessage(text=event.message.text)
+		TextSendMessage(text=result)
 	)
 
 

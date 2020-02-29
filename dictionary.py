@@ -11,9 +11,7 @@ def getMeaning(word):
 
 	meaning = soup.select("#summary > div.summaryM.descriptionWrp > table > tbody > tr > td.content-explanation.ej")
 
-	if(len(meaning) > 0){
+	if(len(meaning) > 0):
 		return "("+word+") >>> "+meaning[0].text
-	}
-	else{
+	else:
 		return "meaning not found."
-	}
