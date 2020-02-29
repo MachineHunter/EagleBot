@@ -18,3 +18,27 @@ vi .bash
 vi .bashrc
 source .bashrc
 ls
+ls
+cd /root/
+ls
+git branch
+ls
+pip install beautifulsoup4
+python3
+ls
+ls
+python -m pip list
+cd /
+cd ~
+ls
+ls
+vi requirements.txt 
+python -m pip list
+echo soupsieve==2.0 >> requirements.txt 
+python
+cd ~
+ls
+vi requirements.txt 
+python -m pip list
+echo "beautifulsoup4==4.8.2" >> requirements.txt 
+vi requirements.txt 
