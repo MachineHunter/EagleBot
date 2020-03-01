@@ -3,6 +3,7 @@ import os
 import sys
 import json
 import dictionary
+import weather
 
 
 from linebot import (
@@ -71,7 +72,10 @@ def callback():
 def handle_message(event):
 	
 	word = event.message.text
-	result = dictionary.getMeaning(word)
+	if(word=="weather" or word=="Weather"):
+		result = weather.getWeather()
+	else:
+		result = dictionary.getMeaning(word)
 
 	line_bot_api.reply_message(
 		event.reply_token,
