@@ -17,14 +17,16 @@
 $'
 
 # コマンドライン 項目の履歴 (新しいものから古いものへ):
+:q!
+|2,0,1583050922,,"q!"
 :wq
-|2,0,1583050249,,"wq"
+|2,0,1583050885,,"wq"
+:w
+|2,0,1583050816,,"w"
+:q
+|2,0,1583050344,,"q"
 :33
 |2,0,1583050241,,"33"
-:w
-|2,0,1583049936,,"w"
-:q
-|2,0,1583049934,,"q"
 :s/"/'/g
 |2,0,1583035138,,"s/\"/'/g"
 :s/6/8/
@@ -46,368 +48,388 @@ $'
 "0	CHAR	0
 	current_time.split(":")[0]
 |3,0,0,0,1,0,1583050101,"current_time.split(\":\")[0]"
-"1	LINE	0
-	result = ""
-|3,0,1,1,1,0,1583050168,"result = \"\""
+""1	LINE	0
+	
+|3,1,1,1,1,0,1583050877,""
 "2	LINE	0
-	current_hour = current_time.split(":")[0]
-|3,0,2,1,1,0,1583050049,"current_hour = current_time.split(\":\")[0]"
-"3	LINE	0
-	print(current_hour)
-|3,0,3,1,1,0,1583049969,"print(current_hour)"
+	
+|3,0,2,1,1,0,1583050875,""
+"3	CHAR	0
+		current_time = str(datetime.datetime.now()).split(" ")[1]
+		current_time = current_time.split(":")[0]+":"+current_time.split(":")[1]
+		result = current_time+"\n"
+	
+	
+|3,0,3,0,5,0,1583050874,"	current_time = str(datetime.datetime.now()).split(\" \")[1]","	current_time = current_time.split(\":\")[0]+\":\"+current_time.split(\":\")[1]","	result = current_time+\"\\n\"","",""
 "4	LINE	0
-			print(td)
-|3,0,4,1,1,0,1583049695,"		print(td)"
+	
+|3,0,4,1,1,0,1583050866,""
 "5	LINE	0
-			print(i)
-|3,0,5,1,1,0,1583049408,"		print(i)"
+	import datetime
+|3,0,5,1,1,0,1583050865,"import datetime"
 "6	LINE	0
-	print(weathercols)
-|3,0,6,1,1,0,1583049318,"print(weathercols)"
+			if(i==0): continue
+|3,0,6,1,1,0,1583050807,"		if(i==0): continue"
 "7	LINE	0
-			print(str(i)+td)
-|3,0,7,1,1,0,1583049315,"		print(str(i)+td)"
+	result = ""
+|3,0,7,1,1,0,1583050168,"result = \"\""
 "8	LINE	0
-		weathercols.append(col)
-|3,0,8,1,1,0,1583049205,"	weathercols.append(col)"
+	current_hour = current_time.split(":")[0]
+|3,0,8,1,1,0,1583050049,"current_hour = current_time.split(\":\")[0]"
 "9	LINE	0
-			col.append(td)
-|3,0,9,1,1,0,1583048960,"		col.append(td)"
-""-	CHAR	0
+	print(current_hour)
+|3,0,9,1,1,0,1583049969,"print(current_hour)"
+"-	CHAR	0
 	)
-|3,1,36,0,1,0,1583050245,")"
+|3,0,36,0,1,0,1583050805,")"
 
 # ファイルマーク:
-'0  33  7  ~/weather.py
-|4,48,33,7,1583050249,"~/weather.py"
-'1  12  0  ~/weather.py
-|4,49,12,0,1583050184,"~/weather.py"
-'2  10  0  ~/weather.py
-|4,50,10,0,1583050184,"~/weather.py"
-'3  29  0  ~/weather.py
-|4,51,29,0,1583050169,"~/weather.py"
-'4  27  0  ~/weather.py
-|4,52,27,0,1583050169,"~/weather.py"
-'5  27  0  ~/weather.py
-|4,53,27,0,1583050169,"~/weather.py"
-'6  25  0  ~/weather.py
-|4,54,25,0,1583050169,"~/weather.py"
-'7  17  34  ~/weather.py
-|4,55,17,34,1583050116,"~/weather.py"
-'8  16  34  ~/weather.py
-|4,56,16,34,1583050116,"~/weather.py"
-'9  16  34  ~/weather.py
-|4,57,16,34,1583050116,"~/weather.py"
+'0  21  24  ~/weather.py
+|4,48,21,24,1583050922,"~/weather.py"
+'1  22  10  ~/weather.py
+|4,49,22,10,1583050885,"~/weather.py"
+'2  22  10  ~/weather.py
+|4,50,22,10,1583050885,"~/weather.py"
+'3  16  4  ~/weather.py
+|4,51,16,4,1583050817,"~/weather.py"
+'4  24  4  ~/weather.py
+|4,52,24,4,1583050817,"~/weather.py"
+'5  16  4  ~/weather.py
+|4,53,16,4,1583050817,"~/weather.py"
+'6  24  4  ~/weather.py
+|4,54,24,4,1583050817,"~/weather.py"
+'7  78  1  ~/main.py
+|4,55,78,1,1583050417,"~/main.py"
+'8  4  0  ~/requirements.txt
+|4,56,4,0,1583050344,"~/requirements.txt"
+'9  25  7  ~/weather.py
+|4,57,25,7,1583050249,"~/weather.py"
 
 # ジャンプリスト (新しいものが先):
+-'  21  24  ~/weather.py
+|4,39,21,24,1583050922,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050908,"~/weather.py"
+-'  22  10  ~/weather.py
+|4,39,22,10,1583050885,"~/weather.py"
+-'  22  10  ~/weather.py
+|4,39,22,10,1583050885,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050854,"~/weather.py"
+-'  16  4  ~/weather.py
+|4,39,16,4,1583050817,"~/weather.py"
+-'  24  4  ~/weather.py
+|4,39,24,4,1583050817,"~/weather.py"
+-'  16  4  ~/weather.py
+|4,39,16,4,1583050817,"~/weather.py"
+-'  24  4  ~/weather.py
+|4,39,24,4,1583050817,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050790,"~/weather.py"
+-'  78  1  ~/main.py
+|4,39,78,1,1583050417,"~/main.py"
+-'  78  1  ~/main.py
+|4,39,78,1,1583050417,"~/main.py"
+-'  78  1  ~/main.py
+|4,39,78,1,1583050417,"~/main.py"
+-'  78  1  ~/main.py
+|4,39,78,1,1583050417,"~/main.py"
+-'  78  1  ~/main.py
+|4,39,78,1,1583050417,"~/main.py"
+-'  78  1  ~/main.py
+|4,39,78,1,1583050417,"~/main.py"
+-'  78  1  ~/main.py
+|4,39,78,1,1583050417,"~/main.py"
+-'  78  1  ~/main.py
+|4,39,78,1,1583050417,"~/main.py"
+-'  1  0  ~/main.py
+|4,39,1,0,1583050346,"~/main.py"
+-'  1  0  ~/main.py
+|4,39,1,0,1583050346,"~/main.py"
+-'  1  0  ~/main.py
+|4,39,1,0,1583050346,"~/main.py"
+-'  1  0  ~/main.py
+|4,39,1,0,1583050346,"~/main.py"
+-'  1  0  ~/main.py
+|4,39,1,0,1583050346,"~/main.py"
+-'  1  0  ~/main.py
+|4,39,1,0,1583050346,"~/main.py"
+-'  1  0  ~/main.py
+|4,39,1,0,1583050346,"~/main.py"
+-'  1  0  ~/main.py
+|4,39,1,0,1583050346,"~/main.py"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  4  0  ~/requirements.txt
+|4,39,4,0,1583050344,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  1  0  ~/requirements.txt
+|4,39,1,0,1583050342,"~/requirements.txt"
+-'  25  7  ~/weather.py
+|4,39,25,7,1583050249,"~/weather.py"
+-'  26  7  ~/weather.py
+|4,39,26,7,1583050249,"~/weather.py"
+-'  32  7  ~/weather.py
+|4,39,32,7,1583050249,"~/weather.py"
+-'  33  7  ~/weather.py
+|4,39,33,7,1583050249,"~/weather.py"
+-'  25  7  ~/weather.py
+|4,39,25,7,1583050249,"~/weather.py"
+-'  26  7  ~/weather.py
+|4,39,26,7,1583050249,"~/weather.py"
+-'  32  7  ~/weather.py
+|4,39,32,7,1583050249,"~/weather.py"
+-'  33  7  ~/weather.py
+|4,39,33,7,1583050249,"~/weather.py"
+-'  33  7  ~/weather.py
+|4,39,33,7,1583050249,"~/weather.py"
+-'  33  7  ~/weather.py
+|4,39,33,7,1583050249,"~/weather.py"
 -'  33  7  ~/weather.py
 |4,39,33,7,1583050249,"~/weather.py"
 -'  1  0  ~/weather.py
 |4,39,1,0,1583050190,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050190,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050190,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050190,"~/weather.py"
+-'  10  0  ~/weather.py
+|4,39,10,0,1583050184,"~/weather.py"
+-'  8  0  ~/weather.py
+|4,39,8,0,1583050184,"~/weather.py"
+-'  12  0  ~/weather.py
+|4,39,12,0,1583050184,"~/weather.py"
+-'  10  0  ~/weather.py
+|4,39,10,0,1583050184,"~/weather.py"
+-'  8  0  ~/weather.py
+|4,39,8,0,1583050184,"~/weather.py"
+-'  12  0  ~/weather.py
+|4,39,12,0,1583050184,"~/weather.py"
+-'  10  0  ~/weather.py
+|4,39,10,0,1583050184,"~/weather.py"
+-'  12  0  ~/weather.py
+|4,39,12,0,1583050184,"~/weather.py"
+-'  10  0  ~/weather.py
+|4,39,10,0,1583050184,"~/weather.py"
+-'  12  0  ~/weather.py
+|4,39,12,0,1583050184,"~/weather.py"
+-'  10  0  ~/weather.py
+|4,39,10,0,1583050184,"~/weather.py"
+-'  12  0  ~/weather.py
+|4,39,12,0,1583050184,"~/weather.py"
+-'  10  0  ~/weather.py
+|4,39,10,0,1583050184,"~/weather.py"
 -'  12  0  ~/weather.py
 |4,39,12,0,1583050184,"~/weather.py"
 -'  10  0  ~/weather.py
 |4,39,10,0,1583050184,"~/weather.py"
 -'  1  0  ~/weather.py
 |4,39,1,0,1583050174,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050174,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050174,"~/weather.py"
+-'  1  0  ~/weather.py
+|4,39,1,0,1583050174,"~/weather.py"
+-'  19  0  ~/weather.py
+|4,39,19,0,1583050169,"~/weather.py"
+-'  17  0  ~/weather.py
+|4,39,17,0,1583050169,"~/weather.py"
 -'  29  0  ~/weather.py
 |4,39,29,0,1583050169,"~/weather.py"
 -'  27  0  ~/weather.py
 |4,39,27,0,1583050169,"~/weather.py"
+-'  19  0  ~/weather.py
+|4,39,19,0,1583050169,"~/weather.py"
+-'  17  0  ~/weather.py
+|4,39,17,0,1583050169,"~/weather.py"
+-'  29  0  ~/weather.py
+|4,39,29,0,1583050169,"~/weather.py"
 -'  27  0  ~/weather.py
 |4,39,27,0,1583050169,"~/weather.py"
--'  25  0  ~/weather.py
-|4,39,25,0,1583050169,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583050122,"~/weather.py"
--'  17  34  ~/weather.py
-|4,39,17,34,1583050116,"~/weather.py"
--'  16  34  ~/weather.py
-|4,39,16,34,1583050116,"~/weather.py"
--'  15  34  ~/weather.py
-|4,39,15,34,1583050116,"~/weather.py"
--'  15  34  ~/weather.py
-|4,39,15,34,1583050116,"~/weather.py"
--'  14  34  ~/weather.py
-|4,39,14,34,1583050116,"~/weather.py"
--'  14  34  ~/weather.py
-|4,39,14,34,1583050116,"~/weather.py"
--'  13  34  ~/weather.py
-|4,39,13,34,1583050116,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583050077,"~/weather.py"
--'  13  17  ~/weather.py
-|4,39,13,17,1583050059,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583050043,"~/weather.py"
--'  31  11  ~/weather.py
-|4,39,31,11,1583050030,"~/weather.py"
--'  31  11  ~/weather.py
-|4,39,31,11,1583050030,"~/weather.py"
--'  29  11  ~/weather.py
-|4,39,29,11,1583050030,"~/weather.py"
--'  29  11  ~/weather.py
-|4,39,29,11,1583050030,"~/weather.py"
--'  29  11  ~/weather.py
-|4,39,29,11,1583050030,"~/weather.py"
--'  29  11  ~/weather.py
-|4,39,29,11,1583050030,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583050022,"~/weather.py"
--'  29  27  ~/weather.py
-|4,39,29,27,1583050018,"~/weather.py"
--'  27  27  ~/weather.py
-|4,39,27,27,1583050018,"~/weather.py"
--'  27  27  ~/weather.py
-|4,39,27,27,1583050018,"~/weather.py"
--'  27  27  ~/weather.py
-|4,39,27,27,1583050018,"~/weather.py"
--'  27  27  ~/weather.py
-|4,39,27,27,1583050018,"~/weather.py"
--'  27  27  ~/weather.py
-|4,39,27,27,1583050018,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583049985,"~/weather.py"
--'  18  0  ~/weather.py
-|4,39,18,0,1583049969,"~/weather.py"
--'  16  0  ~/weather.py
-|4,39,16,0,1583049969,"~/weather.py"
--'  15  0  ~/weather.py
-|4,39,15,0,1583049969,"~/weather.py"
--'  14  0  ~/weather.py
-|4,39,14,0,1583049969,"~/weather.py"
--'  14  0  ~/weather.py
-|4,39,14,0,1583049969,"~/weather.py"
--'  14  0  ~/weather.py
-|4,39,14,0,1583049969,"~/weather.py"
--'  14  0  ~/weather.py
-|4,39,14,0,1583049969,"~/weather.py"
--'  14  0  ~/weather.py
-|4,39,14,0,1583049969,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583049965,"~/weather.py"
--'  30  38  ~/weather.py
-|4,39,30,38,1583049961,"~/weather.py"
--'  28  38  ~/weather.py
-|4,39,28,38,1583049961,"~/weather.py"
--'  26  38  ~/weather.py
-|4,39,26,38,1583049961,"~/weather.py"
--'  28  38  ~/weather.py
-|4,39,28,38,1583049961,"~/weather.py"
--'  26  38  ~/weather.py
-|4,39,26,38,1583049961,"~/weather.py"
--'  26  38  ~/weather.py
-|4,39,26,38,1583049961,"~/weather.py"
--'  25  38  ~/weather.py
-|4,39,25,38,1583049961,"~/weather.py"
--'  26  38  ~/weather.py
-|4,39,26,38,1583049961,"~/weather.py"
--'  24  38  ~/weather.py
-|4,39,24,38,1583049961,"~/weather.py"
--'  25  38  ~/weather.py
-|4,39,25,38,1583049961,"~/weather.py"
--'  26  38  ~/weather.py
-|4,39,26,38,1583049961,"~/weather.py"
--'  24  38  ~/weather.py
-|4,39,24,38,1583049961,"~/weather.py"
--'  25  38  ~/weather.py
-|4,39,25,38,1583049961,"~/weather.py"
--'  26  38  ~/weather.py
-|4,39,26,38,1583049961,"~/weather.py"
--'  24  38  ~/weather.py
-|4,39,24,38,1583049961,"~/weather.py"
--'  25  38  ~/weather.py
-|4,39,25,38,1583049961,"~/weather.py"
--'  26  38  ~/weather.py
-|4,39,26,38,1583049961,"~/weather.py"
--'  24  38  ~/weather.py
-|4,39,24,38,1583049961,"~/weather.py"
--'  25  38  ~/weather.py
-|4,39,25,38,1583049961,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583049951,"~/weather.py"
--'  25  18  ~/weather.py
-|4,39,25,18,1583049945,"~/weather.py"
--'  26  18  ~/weather.py
-|4,39,26,18,1583049945,"~/weather.py"
--'  26  18  ~/weather.py
-|4,39,26,18,1583049945,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583049904,"~/weather.py"
--'  32  13  ~/weather.py
-|4,39,32,13,1583049897,"~/weather.py"
--'  30  13  ~/weather.py
-|4,39,30,13,1583049897,"~/weather.py"
--'  28  13  ~/weather.py
-|4,39,28,13,1583049897,"~/weather.py"
--'  28  13  ~/weather.py
-|4,39,28,13,1583049897,"~/weather.py"
--'  28  13  ~/weather.py
-|4,39,28,13,1583049897,"~/weather.py"
--'  28  13  ~/weather.py
-|4,39,28,13,1583049897,"~/weather.py"
--'  28  13  ~/weather.py
-|4,39,28,13,1583049897,"~/weather.py"
--'  26  13  ~/weather.py
-|4,39,26,13,1583049897,"~/weather.py"
--'  27  13  ~/weather.py
-|4,39,27,13,1583049897,"~/weather.py"
--'  27  13  ~/weather.py
-|4,39,27,13,1583049897,"~/weather.py"
--'  26  13  ~/weather.py
-|4,39,26,13,1583049897,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583049877,"~/weather.py"
--'  25  2  ~/weather.py
-|4,39,25,2,1583049695,"~/weather.py"
--'  24  2  ~/weather.py
-|4,39,24,2,1583049695,"~/weather.py"
--'  25  2  ~/weather.py
-|4,39,25,2,1583049695,"~/weather.py"
--'  24  2  ~/weather.py
-|4,39,24,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  24  2  ~/weather.py
-|4,39,24,2,1583049695,"~/weather.py"
--'  22  2  ~/weather.py
-|4,39,22,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  22  2  ~/weather.py
-|4,39,22,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  22  2  ~/weather.py
-|4,39,22,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  22  2  ~/weather.py
-|4,39,22,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  22  2  ~/weather.py
-|4,39,22,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  23  2  ~/weather.py
-|4,39,23,2,1583049695,"~/weather.py"
--'  1  0  ~/weather.py
-|4,39,1,0,1583049692,"~/weather.py"
--'  25  21  ~/weather.py
-|4,39,25,21,1583049681,"~/weather.py"
 
 # ファイル内マークの履歴 (新しいものから古いもの):
 
 > ~/weather.py
-	*	1583050249	0
-	"	33	7
-	^	33	8
-	.	33	7
-	+	28	19
-	+	28	8
-	+	28	27
-	+	28	7
-	+	25	40
-	+	28	14
-	+	25	5
-	+	28	8
-	+	25	11
-	+	28	48
-	+	26	32
-	+	28	17
-	+	28	10
-	+	28	19
-	+	28	8
-	+	28	17
-	+	28	0
-	+	28	16
-	+	28	0
-	+	8	47
-	+	8	0
-	+	24	50
-	+	24	17
-	+	4	14
-	+	24	18
-	+	24	0
-	+	24	41
-	+	24	18
-	+	28	17
-	+	24	41
-	+	24	15
-	+	4	0
-	+	24	0
-	+	3	0
+	*	1583050921	0
+	"	21	24
+	^	21	25
+	.	21	25
+	+	17	5
+	+	20	8
+	+	17	11
+	+	20	48
+	+	18	32
+	+	20	17
+	+	20	10
+	+	20	19
+	+	20	8
+	+	20	17
 	+	20	0
-	+	24	9
-	+	28	0
-	+	24	0
-	+	25	0
-	+	26	0
-	+	25	25
-	+	21	53
-	+	24	8
-	+	25	0
-	+	24	0
-	+	23	0
-	+	21	24
-	+	22	10
-	+	25	8
-	+	28	7
-	+	28	14
-	+	28	0
-	+	28	22
-	+	21	0
-	+	29	16
-	+	28	0
-	+	25	40
-	+	28	0
-	+	27	20
-	+	21	0
-	+	23	0
-	+	22	16
-	+	27	21
-	+	22	16
-	+	22	23
-	+	27	12
-	+	28	0
-	+	27	14
-	+	27	2
-	+	29	0
-	+	27	2
-	+	29	0
-	+	27	0
-	+	29	22
-	+	31	8
-	+	27	0
-	+	27	9
-	+	22	35
-	+	27	0
-	+	31	13
-	+	29	24
-	+	31	17
-	+	29	27
-	+	30	18
-	+	29	38
-	+	18	0
-	+	29	10
-	+	31	26
-	+	33	11
-	+	18	0
-	+	17	14
-	+	14	0
+	+	20	16
+	+	20	0
+	+	6	47
+	+	6	0
+	+	16	50
+	+	16	17
+	+	3	14
+	+	16	18
+	+	16	0
+	+	16	41
+	+	16	18
+	+	20	17
+	+	16	41
+	+	16	15
+	+	3	0
+	+	16	0
+	+	3	0
+	+	13	0
+	+	16	9
+	+	20	0
+	+	16	0
 	+	17	0
-	+	18	20
-	+	29	0
-	+	18	26
-	+	14	0
-	+	7	16
-	+	8	0
-	+	33	7
+	+	18	0
+	+	17	25
+	+	13	53
+	+	16	8
+	+	17	0
+	+	16	0
+	+	15	0
+	+	13	24
+	+	14	10
+	+	17	8
+	+	20	7
+	+	20	14
+	+	20	0
+	+	20	22
+	+	13	0
+	+	22	16
+	+	20	0
+	+	17	40
+	+	20	0
+	+	19	20
+	+	13	0
+	+	15	0
+	+	14	16
+	+	19	21
+	+	14	16
+	+	14	23
+	+	19	12
+	+	20	0
+	+	19	14
+	+	19	2
+	+	22	0
+	+	19	2
+	+	22	0
+	+	19	0
+	+	22	22
+	+	23	8
+	+	19	0
+	+	19	9
+	+	14	35
+	+	19	0
+	+	23	13
+	+	22	24
+	+	23	17
+	+	22	27
+	+	23	18
+	+	22	38
+	+	13	0
+	+	22	10
+	+	23	26
+	+	25	11
+	+	13	0
+	+	13	14
+	+	12	0
+	+	13	0
+	+	13	20
+	+	22	0
+	+	13	26
+	+	12	0
+	+	5	16
+	+	6	0
+	+	25	7
+	+	22	27
+	+	23	0
+	+	3	0
+	+	4	0
+	+	13	0
+	+	21	25
+
+> ~/main.py
+	*	1583050411	0
+	"	78	1
+	^	78	2
+	.	78	1
+	+	6	13
+	+	75	23
+	+	77	5
+	+	78	1
+
+> ~/requirements.txt
+	*	1583050343	0
+	"	4	0
+	.	3	0
+	+	3	0
 
 > ~/runtime.txt
 	*	1583046838	0
@@ -423,12 +445,6 @@ $'
 	^	22	23
 	.	22	22
 	+	22	22
-
-> ~/requirements.txt
-	*	1583032968	0
-	"	1	0
-	.	3	0
-	+	3	0
 
 > ~/.bash
 	*	1582993324	0

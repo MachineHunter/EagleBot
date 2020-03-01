@@ -75,3 +75,99 @@ ls
 ls -la
 ls
 vi runtime.txt 
+ls
+cd ~
+ls
+ls
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python
+python
+fg 1
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+ls
+vi weather.py 
+python
+fg 1
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+ls
+vi weather.py 
+ls
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+ls
+vi weather.py 
+ls
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+python weather.py 
+vi weather.py 
+ls
+python
+ls
+ls
+vi requirements.txt 
+vi main.py 
+ls
+vi weather.py 
+python
+ls
+vi weather.py 
+python
+vi weather.py 
+cat weather.py 
+ls
+cat weather.py 
