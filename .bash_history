@@ -52,3 +52,26 @@ pip install line-bot-sdk
 ls
 vi requirements.txt 
 vi .bashrc
+ls
+python -m pip list
+pip install line-bot-sdk
+pip install flask
+pip install beautifulsoup4
+python -m pip list
+cd /root/
+cat requirements.txt 
+ls
+find / -name "*gecko*" 2> /dev/null
+python weather.py 
+ls
+vi weather.py 
+cd /
+ls
+ls
+mv copyfilmnoir /usr/share/vim/vim81/colors/film_noir.vim
+ls
+cd /root/
+ls
+ls -la
+ls
+vi runtime.txt 
