@@ -42,3 +42,13 @@ vi requirements.txt
 python -m pip list
 echo "beautifulsoup4==4.8.2" >> requirements.txt 
 vi requirements.txt 
+ls
+cd /root/
+ls
+python -m pip list
+pip install beautifulsoup4
+pip install flask
+pip install line-bot-sdk
+ls
+vi requirements.txt 
+vi .bashrc
